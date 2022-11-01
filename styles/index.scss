@@ -1,9 +1,17 @@
 @import 'breakpoint.scss';
-
+@import 'header.scss';
+@import 'commons.scss';
+@import 'variables.scss';
 * {
   box-sizing: border-box;
 }
 html {
   font-size: 16px;
   font-family: 'Work Sans', sans-serif;
+}
+.page {
+  width: 1400px;
+  margin: auto;
+  min-height: 100vh;
+    
 }

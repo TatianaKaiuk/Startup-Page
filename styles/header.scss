@@ -1,12 +1,12 @@
+@import 'variables.scss';
 .header {
   display: flex;
   width: 1140px;
   height: 62px;
   margin: auto;
 }
-
 .top-section {
-  background-color: #F3C6BD;
+  background-color: $color-top-section;
   padding-top: 39px;
 }
 
@@ -14,44 +14,43 @@
   width: 60px;
   height: 60px;
 }
-
 .logo {
   display: flex;
   align-items: center;
-}
-.logo__text {
+  &__text {
   margin-left: 15px;
 }
-.logo__name {
+&__name {
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
-  color: #2b292d;
+  color: $color-text;
 }
-.logo__description {
+&__description {
   font-size: 18px;
   line-height: 25px;
-  color: rgba(43, 41, 45, 0.6);
+  color: $color-text-ligth;
 }
-
+}
 .navigation {
   margin-left: auto;
   margin-top: 7px;
   margin-bottom: 30px;
   margin-right: 75px;
-}
-.navigation__item {
+  &__item {
   font-size: 18px;
   line-height: 25px;
   text-align: right;
-  color: #2b292d;
+  color: $color-text;
   margin-right: 50px;
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &_selected {
+    font-weight: 700;
+  }
 }
-.navigation__item__item:last-child {
-  margin-right: 0;
-}
-.navigation__item_selected {
-  font-weight: 700;
 }
 
 .navigation__arrow {
@@ -61,32 +60,3 @@
   height: 5px;
   margin-left: 11px;
 }
-
-.get_started {
-  width: 160px;
-  height: 48px;
-  border-radius: 2px;
-  background-color: #3040C4;
-  border: none;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 13px;
-  color: #ffffff;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-  font-family: "Work Sans", sans-serif;
-}
-
-.page {
-  width: 1400px;
-  margin: auto;
-  min-height: 100vh;
-}
-
-/*# sourceMappingURL=styles.css.map */

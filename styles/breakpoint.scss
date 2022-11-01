@@ -1,0 +1,7 @@
+$sm: 399px;
+$lg: 1400px;
+@mixin for-large-up {
+    @media screen and (min-width: 1400px) {
+        @content;
+    }
+}
