@@ -1,62 +1,128 @@
 @import 'variables.scss';
 .header {
-  display: flex;
-  width: 1140px;
-  height: 62px;
-  margin: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    margin: auto;
+    padding-left: 15px;
 }
 .top-section {
-  background-color: $color-top-section;
-  padding-top: 39px;
-}
+    background-color: $color-white;
 
-.icon__header {
-  width: 60px;
-  height: 60px;
+}
+.navigation {
+  display: none;
 }
 .logo {
   display: flex;
   align-items: center;
   &__text {
-  margin-left: 15px;
-}
-&__name {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
-  color: $color-text;
-}
-&__description {
-  font-size: 18px;
-  line-height: 25px;
-  color: $color-text-ligth;
-}
-}
-.navigation {
-  margin-left: auto;
-  margin-top: 7px;
-  margin-bottom: 30px;
-  margin-right: 75px;
-  &__item {
-  font-size: 18px;
-  line-height: 25px;
-  text-align: right;
-  color: $color-text;
-  margin-right: 50px;
-  &__item:last-child {
-    margin-right: 0;
-  }
-
-  &_selected {
+      margin-left: 13px;
+    }
+  &__name {
     font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: $color-text;
+  }
+
+  &__description {
+    display: none;
   }
 }
-}
+.icon__header {
+  width: 48px;
+  height: 48px;
 
-.navigation__arrow {
+}
+.header__button {
+  display: none;
+}
+@media screen and (min-width: 400px) {
+  .header {
+    display: flex;
+    width: 1140px;
+    height: 62px;
+    margin: auto;
+  }
+  .header__menu_button {
+    display: none;
+  }
+  .top-section {
+    background-color: $color-top-section;
+    padding-top: 39px;
+  }
+  .header__button {
+    display: block;
+  }
+
+  .navigation {
+    display: block;
+    margin-left: auto;
+    margin-top: 7px;
+    margin-bottom: 30px;
+    margin-right: 75px;
+    &__item {
+      font-size: 18px;
+      line-height: 25px;
+      text-align: right;
+      color: $color-text;
+      margin-right: 50px;
+      &__item:last-child {
+        margin-right: 0;
+      }
+
+      &_selected {
+        font-weight: 700;
+      }
+    }
+  }
+}
+@media screen and (min-width: 400px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    &__text {
+      margin-left: 15px;
+    }
+    &__name {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+      color: $color-text;
+    }
+    &__description {
+      display: block;
+      font-size: 18px;
+      line-height: 25px;
+      color: $color-text-ligth;
+    }
+  }
+  .icon__header {
+    width: 60px;
+    height: 60px;
+  }
+  .navigation__arrow {
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
   display: inline-block;
   width: 8px;
   height: 5px;
   margin-left: 11px;
+}
+}
+
+.header__menu_button {
+    margin-left: auto;
+    width: 58px;
+    height: 100%;
+    border: none;
+    border-left: 1px solid #00000026;
+    background: transparent;
+}
+ .header__menu_icon {
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
 }

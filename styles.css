@@ -1,18 +1,18 @@
 .header {
   display: flex;
-  width: 1140px;
-  height: 62px;
+  align-items: center;
+  width: 100%;
+  height: 64px;
   margin: auto;
+  padding-left: 15px;
 }
 
 .top-section {
-  background-color: #F3C6BD;
-  padding-top: 39px;
+  background-color: #ffffff;
 }
 
-.icon__header {
-  width: 60px;
-  height: 60px;
+.navigation {
+  display: none;
 }
 
 .logo {
@@ -20,7 +20,7 @@
   align-items: center;
 }
 .logo__text {
-  margin-left: 15px;
+  margin-left: 13px;
 }
 .logo__name {
   font-weight: 700;
@@ -29,37 +29,102 @@
   color: #2b292d;
 }
 .logo__description {
-  font-size: 18px;
-  line-height: 25px;
-  color: rgba(43, 41, 45, 0.6);
+  display: none;
 }
 
-.navigation {
+.icon__header {
+  width: 48px;
+  height: 48px;
+}
+
+.header__button {
+  display: none;
+}
+
+@media screen and (min-width: 400px) {
+  .header {
+    display: flex;
+    width: 1140px;
+    height: 62px;
+    margin: auto;
+  }
+  .header__menu_button {
+    display: none;
+  }
+  .top-section {
+    background-color: #F3C6BD;
+    padding-top: 39px;
+  }
+  .header__button {
+    display: block;
+  }
+  .navigation {
+    display: block;
+    margin-left: auto;
+    margin-top: 7px;
+    margin-bottom: 30px;
+    margin-right: 75px;
+  }
+  .navigation__item {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+    color: #2b292d;
+    margin-right: 50px;
+  }
+  .navigation__item__item:last-child {
+    margin-right: 0;
+  }
+  .navigation__item_selected {
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 400px) {
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo__text {
+    margin-left: 15px;
+  }
+  .logo__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #2b292d;
+  }
+  .logo__description {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(43, 41, 45, 0.6);
+  }
+  .icon__header {
+    width: 60px;
+    height: 60px;
+  }
+  .navigation__arrow {
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+    display: inline-block;
+    width: 8px;
+    height: 5px;
+    margin-left: 11px;
+  }
+}
+.header__menu_button {
   margin-left: auto;
-  margin-top: 7px;
-  margin-bottom: 30px;
-  margin-right: 75px;
-}
-.navigation__item {
-  font-size: 18px;
-  line-height: 25px;
-  text-align: right;
-  color: #2b292d;
-  margin-right: 50px;
-}
-.navigation__item__item:last-child {
-  margin-right: 0;
-}
-.navigation__item_selected {
-  font-weight: 700;
+  width: 58px;
+  height: 100%;
+  border: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.1490196078);
+  background: transparent;
 }
 
-.navigation__arrow {
-  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+.header__menu_icon {
   display: inline-block;
-  width: 8px;
-  height: 5px;
-  margin-left: 11px;
+  width: 18px;
+  height: 13px;
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
 }
 
 .get_started {
@@ -84,9 +149,18 @@ html {
 }
 
 .page {
-  width: 1400px;
-  margin: auto;
-  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 400px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
