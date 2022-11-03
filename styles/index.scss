@@ -2,6 +2,8 @@
 @import "header.scss";
 @import "commons.scss";
 @import "variables.scss";
+@import 'headline.scss';
+@import 'about.scss';
 * {
   box-sizing: border-box;
 }
@@ -13,13 +15,12 @@ html {
 .page {
   width: 100%;
  overflow-x: hidden;
- }
- @media screen and (min-width: 400px) {
-  .page {
-    display: flex;
+ @include for-large-up {
+   display: flex;
     flex-direction: column;
     width: 1400px;
     margin: auto;
     min-height: 100vh;
-  }
-}
+ }
+ }
+ 
