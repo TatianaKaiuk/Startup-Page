@@ -151,7 +151,7 @@
   .headline {
     width: 1249px;
     height: 456px;
-    margin-top: 81px;
+    margin-top: 76px;
     margin-left: 126px;
     margin-right: 25px;
     margin-bottom: 77px;
@@ -337,6 +337,11 @@
 .customers__logo {
   filter: brightness(0);
   max-width: 80%;
+}
+
+.features__mobile_picture {
+  max-width: 290px;
+  height: 432px;
 }
 
 * {
