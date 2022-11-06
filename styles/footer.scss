@@ -1,0 +1,88 @@
+.footer__logo {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid $color-ligth-gray;
+  &_icon {
+    width: 60px;
+    height: 60px;
+  }
+  &_text {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 31px;
+  }
+  &_name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: $color-text;
+    margin-top: 20px;
+    text-align: center;
+  }
+  &_description {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+    color: $color-text-ligth;
+  }
+}
+
+.download {
+    display: flex;
+    margin-left: 30px;
+  margin-right: 29px;
+  margin-bottom: 40px;
+  &__app-store {
+    width: 135px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  &__google-play {
+    width: 116px;
+    height: 40px;
+  }
+}
+.for-users {
+  margin: 15px;
+  margin-bottom: 31px;
+}
+.user-content {
+  &__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: $color-text;
+    margin: 0;
+    margin-bottom: 18px;
+    &_list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
+      &_item {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: rgba(43, 41, 45, 0.6);
+      }
+    }
+  }
+}
+.informetion__item {
+    margin-bottom: 30px;
+    margin-right: 22px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(43, 41, 45, 0.6);
+}
+.footer__social {
+  margin-left: 15px;
+  margin-bottom: 23px; 
+  &_item {
+    margin-right: 20px;
+  }
+}
