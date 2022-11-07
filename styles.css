@@ -6,58 +6,35 @@
   margin: auto;
   padding-left: 15px;
 }
+@media screen and (min-width: 1400px) {
+  .header {
+    display: flex;
+    width: 1140px;
+    height: 62px;
+  }
+}
 
 .top-section {
   background-color: #ffffff;
+}
+@media screen and (min-width: 1400px) {
+  .top-section {
+    background-color: #F3C6BD;
+    padding-top: 39px;
+  }
+}
+
+.header__menu_icon {
+  display: inline-block;
+  width: 18px;
+  height: 13px;
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
 }
 
 .navigation {
   display: none;
 }
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-.logo__text {
-  margin-left: 13px;
-}
-.logo__name {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
-  color: #2b292d;
-}
-.logo__description {
-  display: none;
-}
-
-.icon__header {
-  width: 48px;
-  height: 48px;
-}
-
-.header__button {
-  display: none;
-}
-
-@media screen and (min-width: 400px) {
-  .header {
-    display: flex;
-    width: 1140px;
-    height: 62px;
-    margin: auto;
-  }
-  .header__menu_button {
-    display: none;
-  }
-  .top-section {
-    background-color: #F3C6BD;
-    padding-top: 39px;
-  }
-  .header__button {
-    display: block;
-  }
+@media screen and (min-width: 1400px) {
   .navigation {
     display: block;
     margin-left: auto;
@@ -79,38 +56,65 @@
     font-weight: 700;
   }
 }
-@media screen and (min-width: 400px) {
-  .logo {
-    display: flex;
-    align-items: center;
-  }
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo__text {
+  margin-left: 13px;
+}
+@media screen and (min-width: 1400px) {
   .logo__text {
     margin-left: 15px;
   }
-  .logo__name {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-    color: #2b292d;
-  }
+}
+.logo__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #2b292d;
+}
+.logo__description {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
   .logo__description {
     display: block;
     font-size: 18px;
     line-height: 25px;
     color: rgba(43, 41, 45, 0.6);
   }
+}
+
+.icon__header {
+  width: 48px;
+  height: 48px;
+}
+@media screen and (min-width: 1400px) {
   .icon__header {
     width: 60px;
     height: 60px;
   }
-  .navigation__arrow {
-    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
-    display: inline-block;
-    width: 8px;
-    height: 5px;
-    margin-left: 11px;
+}
+
+.header__button {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  .header__button {
+    display: block;
   }
 }
+
+.navigation__arrow {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+  display: inline-block;
+  width: 8px;
+  height: 5px;
+  margin-left: 11px;
+}
+
 .header__menu_button {
   margin-left: auto;
   width: 58px;
@@ -119,12 +123,10 @@
   border-left: 1px solid rgba(0, 0, 0, 0.1490196078);
   background: transparent;
 }
-
-.header__menu_icon {
-  display: inline-block;
-  width: 18px;
-  height: 13px;
-  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
+@media screen and (min-width: 1400px) {
+  .header__menu_button {
+    display: none;
+  }
 }
 
 .get_started {
@@ -490,7 +492,7 @@
 
 .features__screen {
   max-width: 1086px;
-  height: 957px;
+  height: 597px;
   filter: drop-shadow(0px 4px 16px rgba(44, 50, 65, 0.08));
 }
 @media screen and (max-width: 399px) {
@@ -507,36 +509,71 @@
   bottom: 29.57%;
 }
 
-.footer__logo {
+@media screen and (min-width: 1400px) {
+  .footer {
+    width: 1400px;
+    height: 389px;
+    padding: 0px 132px 15px 130px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .users-navigation {
+    display: flex;
+    width: 1140px;
+  }
+}
+
+.logo {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #E3E3E3;
 }
-.footer__logo_icon {
-  width: 60px;
-  height: 60px;
+@media screen and (min-width: 1400px) {
+  .logo {
+    margin-top: 43px;
+  }
 }
-.footer__logo_text {
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 31px;
+.logo__text {
+  margin-left: 13px;
 }
-.footer__logo_name {
+@media screen and (min-width: 1400px) {
+  .logo__text {
+    margin-left: 15px;
+  }
+}
+.logo__name {
   font-weight: 700;
   font-size: 20px;
   line-height: 25px;
   color: #2b292d;
-  margin-top: 20px;
-  text-align: center;
 }
-.footer__logo_description {
-  display: block;
-  font-size: 18px;
-  line-height: 25px;
-  color: rgba(43, 41, 45, 0.6);
+.logo__description {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  .logo__description {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(43, 41, 45, 0.6);
+  }
+}
+
+.footer__company_inform {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  .footer__company_inform {
+    display: inline-block;
+    width: 360px;
+    height: 85px;
+    margin: 0;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(43, 41, 45, 0.6);
+  }
 }
 
 .download {
@@ -545,21 +582,34 @@
   margin-right: 29px;
   margin-bottom: 40px;
 }
-.download__app-store {
-  width: 135px;
-  height: 40px;
+@media screen and (min-width: 1400px) {
+  .download {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+}
+.download__item {
   margin-right: 10px;
 }
-.download__google-play {
-  width: 116px;
-  height: 40px;
-}
 
-.for-users {
+.inform-block {
   margin: 15px;
   margin-bottom: 31px;
 }
+@media screen and (min-width: 1400px) {
+  .inform-block {
+    display: flex;
+    margin: 0;
+    margin-left: auto;
+  }
+}
 
+@media screen and (min-width: 1400px) {
+  .user-content {
+    margin-right: 29px;
+    margin-top: 60px;
+  }
+}
 .user-content__title {
   font-weight: 700;
   font-size: 22px;
@@ -581,18 +631,41 @@
   color: rgba(43, 41, 45, 0.6);
 }
 
-.informetion__item {
+.footer__links {
+  margin-left: 15px;
+}
+@media screen and (min-width: 1400px) {
+  .footer__links {
+    display: flex;
+    height: 50px;
+  }
+}
+
+.footer__links_item {
   margin-bottom: 30px;
   margin-right: 22px;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
+  text-decoration: none;
   color: rgba(43, 41, 45, 0.6);
+}
+@media screen and (min-width: 1400px) {
+  .footer__links_item {
+    margin-top: 13px;
+  }
 }
 
 .footer__social {
-  margin-left: 15px;
   margin-bottom: 23px;
+  margin-top: 31px;
+}
+@media screen and (min-width: 1400px) {
+  .footer__social {
+    margin: 0;
+    margin-top: 17px;
+    margin-left: auto;
+  }
 }
 .footer__social_item {
   margin-right: 20px;
