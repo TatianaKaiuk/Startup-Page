@@ -1,6 +1,7 @@
 .customers {
   display: flex;
   flex-direction: column;
+  margin-bottom: 8px;
   &_row {
     display: flex;
     @include for-large-up {
