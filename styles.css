@@ -407,7 +407,6 @@
 
 .features {
   display: flex;
-  height: 602px;
   position: relative;
 }
 @media screen and (max-width: 399px) {
@@ -708,6 +707,140 @@
 }
 .footer__social_item {
   margin-right: 20px;
+}
+
+.order {
+  background-color: #F4F5F7;
+}
+@media screen and (min-width: 1400px) {
+  .order {
+    display: flex;
+    align-items: center;
+  }
+}
+.order__picture {
+  display: inline-block;
+  width: 200px;
+  height: 220px;
+  margin: 50px 60px 40px 60px;
+}
+@media screen and (min-width: 1400px) {
+  .order__picture {
+    width: 269px;
+    height: 296px;
+    margin: 73px 121px 72px 224px;
+  }
+}
+.order__some-text {
+  margin: 0 15px 40px 15px;
+}
+@media screen and (min-width: 1400px) {
+  .order__some-text {
+    margin: 0;
+    margin-top: 106px;
+  }
+}
+.order__some-text_title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #2b292d;
+  text-align: center;
+  letter-spacing: -0.25px;
+  margin: 0;
+  margin-bottom: 18px;
+}
+@media screen and (min-width: 1400px) {
+  .order__some-text_title {
+    text-align: start;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+}
+.order__some-text_description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #2b292d;
+  margin: 0;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 1400px) {
+  .order__some-text_description {
+    padding: 0;
+    margin-bottom: 26px;
+    margin-right: 230px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.content .down__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+@media screen and (min-width: 1400px) {
+  .content .down__item {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+}
+.content .down__item_email {
+  width: 290px;
+  height: 48px;
+  text-align: center;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+.content .down__item_email::placeholder {
+  color: #2b292d;
+}
+@media screen and (min-width: 1400px) {
+  .content .down__item_email {
+    width: 385px;
+    height: 48px;
+    margin: 0;
+    margin-right: 10px;
+  }
+}
+.content .down__item_button {
+  width: 290px;
+  height: 48px;
+}
+@media screen and (min-width: 1400px) {
+  .content .down__item_button {
+    width: 160px;
+    height: 48px;
+  }
+}
+
+.text-under {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(43, 41, 45, 0.6);
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 1400px) {
+  .text-under {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 106px;
+  }
+}
+.text-under__links {
+  color: #3142C6;
 }
 
 * {
