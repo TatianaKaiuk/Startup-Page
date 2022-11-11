@@ -164,13 +164,10 @@
 }
 @media screen and (min-width: 1400px) {
   .headline {
-    width: 1249px;
-    height: 456px;
+    max-width: 1249px;
     margin-top: 76px;
     margin-left: 126px;
     margin-right: 25px;
-    margin-bottom: 77px;
-    padding: 0;
   }
 }
 .headline__text {
@@ -240,6 +237,7 @@
     margin-right: 10px;
     width: 158px;
     height: 48px;
+    margin-bottom: 126px;
   }
 }
 .headline__image {
@@ -251,11 +249,11 @@
 }
 @media screen and (min-width: 1400px) {
   .headline__image {
-    display: inline-block;
     position: relative;
     width: 796px;
     height: 448px;
     margin-left: auto;
+    margin-bottom: 77px;
   }
 }
 
