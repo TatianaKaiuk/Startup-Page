@@ -11,3 +11,17 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
     inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
+.white_button {
+  width: 158px;
+  height: 48px;
+  background-color: $color-white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 13px;
+  color: $color-button-blue;
+  text-align: center;
+  border: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
