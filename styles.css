@@ -180,6 +180,7 @@
 }
 @media screen and (min-width: 1400px) {
   .headline__text {
+    margin: 0;
     z-index: 1;
   }
 }
@@ -315,7 +316,6 @@
     justify-content: space-between;
     width: 1140px;
     padding-top: 30px;
-    padding-bottom: 106px;
   }
 }
 
@@ -410,6 +410,7 @@
 .features {
   display: flex;
   position: relative;
+  margin-top: 106px;
 }
 @media screen and (max-width: 399px) {
   .features {
@@ -973,6 +974,98 @@
   font-size: 22px;
   line-height: 28px;
   padding-top: 22px;
+}
+
+.feedback {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #E3E3E3;
+}
+@media screen and (min-width: 1400px) {
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 66px;
+    position: relative;
+  }
+}
+.feedback__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #3142C6;
+  margin-top: 39px;
+}
+@media screen and (min-width: 1400px) {
+  .feedback__title {
+    margin: 0;
+    margin-top: 76px;
+  }
+}
+.feedback__description {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #2b292d;
+  margin: 0;
+  margin-top: 29px;
+}
+@media screen and (min-width: 1400px) {
+  .feedback__description {
+    width: 750px;
+    margin-top: 28px;
+  }
+}
+.feedback__image {
+  position: absolute;
+  right: 26px;
+  bottom: 0;
+  margin-top: 40px;
+}
+
+.signature {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1400px) {
+  .signature {
+    margin-top: 34px;
+    text-align: center;
+  }
+}
+.signature__name {
+  margin: 0;
+  color: #2b292d;
+}
+.signature__job-title {
+  margin: 0;
+  color: rgba(43, 41, 45, 0.6);
+}
+
+.circle__for-feedback {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  margin-right: 19px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(43, 41, 45, 0.2);
+}
+.circle:last-child {
+  margin-right: 0;
+}
+
+.circle_blue {
+  background-color: #3142C6;
 }
 
 * {
