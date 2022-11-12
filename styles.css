@@ -167,6 +167,7 @@
 @media screen and (min-width: 1400px) {
   .headline {
     max-width: 1249px;
+    padding: 0;
     margin-left: 126px;
     margin-right: 25px;
   }
