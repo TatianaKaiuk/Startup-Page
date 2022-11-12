@@ -6,18 +6,19 @@
   height: 64px;
   margin: auto;
   padding-left: 15px;
-    @include for-large-up {
+  @include for-large-up {
     display: flex;
     width: 1140px;
     height: 62px;
-   
+    margin-bottom: 81px;
+    margin-top: 45px;
   }
 }
 .top-section {
   background-color: $color-white;
   @include for-large-up {
     background-color: $color-top-section;
-    padding-top: 39px;
+    // padding-top: 39px;
   }
 }
 .header__menu_icon {
@@ -28,27 +29,27 @@
 }
 .navigation {
   display: none;
-   @include for-large-up {
-  display: block;
-  margin-left: auto;
-  margin-top: 7px;
-  margin-bottom: 30px;
-  margin-right: 75px;
-  &__item {
-    font-size: 18px;
-    line-height: 25px;
-    text-align: right;
-    color: $color-text;
-    margin-right: 50px;
-    &__item:last-child {
-      margin-right: 0;
-    }
+  @include for-large-up {
+    display: block;
+    margin-left: auto;
+    margin-top: 7px;
+    margin-bottom: 30px;
+    margin-right: 75px;
+    &__item {
+      font-size: 18px;
+      line-height: 25px;
+      text-align: right;
+      color: $color-text;
+      margin-right: 50px;
+      &__item:last-child {
+        margin-right: 0;
+      }
 
-    &_selected {
-      font-weight: 700;
+      &_selected {
+        font-weight: 700;
+      }
     }
   }
-   }
 }
 .logo {
   display: flex;

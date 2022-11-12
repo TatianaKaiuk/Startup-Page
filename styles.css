@@ -11,6 +11,8 @@
     display: flex;
     width: 1140px;
     height: 62px;
+    margin-bottom: 81px;
+    margin-top: 45px;
   }
 }
 
@@ -20,7 +22,6 @@
 @media screen and (min-width: 1400px) {
   .top-section {
     background-color: #F3C6BD;
-    padding-top: 39px;
   }
 }
 
@@ -165,7 +166,6 @@
 @media screen and (min-width: 1400px) {
   .headline {
     max-width: 1249px;
-    margin-top: 76px;
     margin-left: 126px;
     margin-right: 25px;
   }
