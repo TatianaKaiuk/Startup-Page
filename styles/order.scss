@@ -2,18 +2,6 @@
   background-color: $color-backgraund-ligth;
   @include for-large-up {
     display: flex;
-    align-items: center;
-  }
-  &__picture {
-    display: inline-block;
-    width: 200px;
-    height: 220px;
-    margin: 50px 60px 40px 60px;
-    @include for-large-up {
-      width: 269px;
-      height: 296px;
-      margin: 73px 121px 72px 224px;
-    }
   }
 
   &__some-text {
@@ -51,6 +39,18 @@
         margin-right: 230px;
       }
     }
+  }
+}
+.picture {
+  display: inline-block;
+  width: 200px;
+  height: 220px;
+  margin: 50px 60px 40px 60px;
+  @include for-large-up {
+    width: 269px;
+    height: 296px;
+    margin: 0;
+    margin: 73px 121px 72px 224px;
   }
 }
 .content {

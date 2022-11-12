@@ -36,11 +36,14 @@
     }
   }
   &__image {
+      margin-top: 40px;
+    @include for-large-up {
     position: absolute;
     right: 26px;
     bottom: 0;
-    margin-top: 40px;
+    margin: 0;
   }
+}
 }
 .signature {
   font-weight: 700;
