@@ -1,0 +1,153 @@
+.hiring {
+  padding: 50px 15px 50px 15px;
+  @include for-large-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-top: 106px;
+    padding-bottom: 110px;
+  }
+  &__text {
+    @include for-large-up {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &_title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -0.357143px;
+      color: $color-text;
+      text-align: center;
+    }
+    &_description {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 34px;
+      color: $color-text;
+      text-align: center;
+      margin-top: 18px;
+      @include for-large-up {
+        width: 555px;
+        height: 72px;
+        margin-top: 20px;
+      }
+    }
+  }
+  &__button {
+    margin-top: 30px;
+    @include for-large-up {
+      margin-top: 28px;
+    }
+  }
+  &__vacancies {
+    margin-top: 39px;
+    @include for-large-up {
+      margin-top: 110px;
+    }
+  }
+}
+.action__button {
+  color: $color-white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 13px;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  background-color: #3040c4;
+  width: 290px;
+  height: 48px;
+  border: none;
+}
+.vacancy {
+  display: flex;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+  border-radius: 8px;
+  text-decoration: none;
+  margin-bottom: 15px;
+  align-items: center;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:hover {
+    @include for-large-up {
+      background-color: #3141c5;
+      color: $color-white;
+    }
+  }
+  @include for-large-up {
+    display: flex;
+
+    justify-content: space-between;
+    width: 750px;
+    height: 81px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__details {
+    padding-left: 20px;
+    @include for-large-up {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: $color-text;
+  }
+  &__location {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 18px;
+    color: $color-text-ligth;
+    @include for-large-up {
+      margin: 0;
+      margin-left: 20px;
+    }
+  }
+  &__arrow_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: $color-gray;
+    border-radius: 0px 8px 8px 0px;
+    width: 50px;
+    height: 140px;
+    @include for-large-up {
+      display: none;
+    }
+  }
+}
+.icon-arrow_rigth {
+  display: inline-block;
+  width: 7px;
+  height: 12px;
+  background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png');
+}
+
+.icon-arrow_rigth_white {
+  @include for-large-up {
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    color: #2c324199;
+    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png');
+    &:hover {
+      background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
+    }
+  }
+}
