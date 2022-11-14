@@ -559,10 +559,12 @@
   flex-direction: column;
   margin-left: 13px;
   align-items: center;
+  margin-top: 20px;
 }
 @media screen and (min-width: 1400px) {
   .footer__company_logo_text {
     align-items: flex-start;
+    margin: 0;
     margin-left: 15px;
   }
 }
