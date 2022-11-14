@@ -1,4 +1,4 @@
-.audiences {
+.audience {
   background-color: $color-backgraund-audience;
   padding-left: 15px;
   padding-right: 15px;
@@ -64,7 +64,7 @@
     }
   }
 }
-.audiences__btn {
+.audience__btn {
   @include for-large-up {
     display: flex;
     justify-content: center;
@@ -74,7 +74,7 @@
   color: #000000;
   margin-bottom: 40px;
 }
-.audiences__gallery {
+.audience__gallery {
     @include for-large-up {
    display: flex;
   }
@@ -112,7 +112,7 @@
   }
 }
 }
-.audiences__gallery_cards-description {
+.audience__gallery_cards-description {
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
