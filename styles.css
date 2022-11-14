@@ -11,7 +11,6 @@
     display: flex;
     width: 1140px;
     height: 62px;
-    margin-bottom: 81px;
     margin-top: 45px;
   }
 }
@@ -169,6 +168,8 @@
     flex-direction: row;
     max-width: 1249px;
     padding: 0;
+    margin: o;
+    margin-top: 81px;
     margin-left: 126px;
     margin-right: 25px;
     position: relative;
