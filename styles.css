@@ -1144,6 +1144,23 @@
     margin-top: 110px;
   }
 }
+.hiring__vacancy {
+  margin-bottom: 15px;
+}
+.hiring__vacancy:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 1400px) {
+  .hiring__vacancy {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .hiring__vacancy:last-child {
+    margin-bottom: 0;
+  }
+}
 
 .action__button {
   color: #ffffff;
@@ -1159,24 +1176,27 @@
   border: none;
 }
 
-@media screen and (min-width: 1400px) {
-  .hiring__vacancy:hover {
-    color: #ffffff;
-    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
-    background-color: #3141c5;
-  }
-}
-
 .vacancy {
   display: flex;
   border: 1px solid rgba(43, 41, 45, 0.2);
   border-radius: 8px;
   text-decoration: none;
-  margin-bottom: 15px;
-  align-items: center;
+  overflow: hidden;
 }
-.vacancy:last-child {
-  margin-bottom: 0;
+.vacancy:hover {
+  background-color: #3141c5;
+}
+.vacancy:hover .vacancy__title {
+  color: #ffffff;
+}
+.vacancy:hover .vacancy__location {
+  color: #ffffff;
+}
+.vacancy:hover .icon-arrow_rigth {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
+}
+.vacancy:hover .vacancy__arrow_container {
+  background-color: transparent;
 }
 @media screen and (min-width: 1400px) {
   .vacancy {
@@ -1184,17 +1204,11 @@
     justify-content: space-between;
     width: 750px;
     height: 81px;
-    margin: 0;
-    margin-bottom: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  .vacancy:last-child {
-    margin-bottom: 0;
   }
 }
 .vacancy__details {
   padding-left: 20px;
+  flex: 1;
 }
 @media screen and (min-width: 1400px) {
   .vacancy__details {
@@ -1217,33 +1231,23 @@
 }
 @media screen and (min-width: 1400px) {
   .vacancy__location {
-    margin: 0;
-    margin-left: 20px;
+    max-width: 232px;
+    flex: 1;
+    margin-left: 0;
+    margin-left: auto;
   }
 }
 .vacancy__arrow_container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
   background-color: #D5D4D5;
   border-radius: 0px 8px 8px 0px;
   width: 50px;
-  height: 140px;
 }
 @media screen and (min-width: 1400px) {
   .vacancy__arrow_container {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .icon-arrow_rigth_white {
-    display: inline-block;
-    width: 7px;
-    height: 12px;
-    color: rgba(44, 50, 65, 0.6);
-    background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
+    background-color: #ffffff;
   }
 }
 

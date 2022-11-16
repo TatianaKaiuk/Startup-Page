@@ -49,6 +49,21 @@
       margin-top: 110px;
     }
   }
+  &__vacancy {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include for-large-up {
+      margin: 0;
+      margin-bottom: 20px;
+      padding-left: 25px;
+      padding-right: 25px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 .action__button {
   color: $color-white;
@@ -64,27 +79,28 @@
   height: 48px;
   border: none;
 }
-.hiring__vacancy:hover {
-  @include for-large-up {
-    color: $color-white;
-    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
-    background-color: #3141c5;
-  }
-}
+
 .vacancy {
   display: flex;
   border: 1px solid rgba(43, 41, 45, 0.2);
   border-radius: 8px;
   text-decoration: none;
-  margin-bottom: 15px;
-  align-items: center;
-  &:last-child {
-    margin-bottom: 0;
-  }
+  // align-items: center;
+  overflow: hidden;
+
   &:hover {
-    @include for-large-up {
-      // background-color: #3141c5;
-      // color: $color-white;
+    background-color: #3141c5;
+    .vacancy__title {
+      color: $color-white;
+    }
+    .vacancy__location {
+      color: $color-white;
+    }
+    .icon-arrow_rigth {
+      background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
+    }
+    .vacancy__arrow_container {
+      background-color: transparent;
     }
   }
   @include for-large-up {
@@ -93,16 +109,10 @@
     justify-content: space-between;
     width: 750px;
     height: 81px;
-    margin: 0;
-    margin-bottom: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
   &__details {
     padding-left: 20px;
+    flex: 1;
     @include for-large-up {
       display: flex;
       align-items: center;
@@ -121,35 +131,22 @@
     margin-top: 18px;
     color: $color-text-ligth;
     @include for-large-up {
-      margin: 0;
-      margin-left: 20px;
+      max-width: 232px;
+      flex: 1;
+      margin-left: 0;
+      margin-left: auto;
     }
   }
   &__arrow_container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
     background-color: $color-gray;
     border-radius: 0px 8px 8px 0px;
     width: 50px;
-    height: 140px;
+
     @include for-large-up {
-      display: none;
+      background-color: $color-white;
     }
-  }
-}
-
-
-.icon-arrow_rigth_white {
-  @include for-large-up {
-    display: inline-block;
-    width: 7px;
-    height: 12px;
-    color: #2c324199;
-    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png');
-    // &:hover {
-    //   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
-    // }
   }
 }
