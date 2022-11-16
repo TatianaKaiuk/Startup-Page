@@ -64,6 +64,13 @@
   height: 48px;
   border: none;
 }
+.hiring__vacancy:hover {
+  @include for-large-up {
+    color: $color-white;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
+    background-color: #3141c5;
+  }
+}
 .vacancy {
   display: flex;
   border: 1px solid rgba(43, 41, 45, 0.2);
@@ -76,8 +83,8 @@
   }
   &:hover {
     @include for-large-up {
-      background-color: #3141c5;
-      color: $color-white;
+      // background-color: #3141c5;
+      // color: $color-white;
     }
   }
   @include for-large-up {
@@ -146,8 +153,8 @@
     height: 12px;
     color: #2c324199;
     background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png');
-    &:hover {
-      background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
-    }
+    // &:hover {
+    //   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
+    // }
   }
 }
