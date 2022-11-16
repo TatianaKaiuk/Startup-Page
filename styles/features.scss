@@ -1,7 +1,6 @@
 .features__mobile {
   display: flex;
   flex-direction: column;
-  //  margin: 0;
   @include for-large-up {
     display: none;
   }
