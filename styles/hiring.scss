@@ -139,12 +139,7 @@
     }
   }
 }
-.icon-arrow_rigth {
-  display: inline-block;
-  width: 7px;
-  height: 12px;
-  background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png');
-}
+
 
 .icon-arrow_rigth_white {
   @include for-large-up {

@@ -156,6 +156,13 @@
   border-radius: 2px;
 }
 
+.icon-arrow_rigth {
+  display: block;
+  width: 7px;
+  height: 12px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
+}
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -941,11 +948,11 @@
 }
 
 @media screen and (min-width: 1400px) {
-  .audience__gallery {
+  .categories {
     display: flex;
   }
 }
-.audience__gallery_cards {
+.categories__user_card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -960,21 +967,21 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   border-radius: 8px;
 }
-.audience__gallery_cards:hover {
+.categories__user_card:hover {
   background-color: #3142C6;
   color: #ffffff;
 }
 @media screen and (min-width: 1400px) {
-  .audience__gallery_cards {
+  .categories__user_card {
     margin: 0;
     margin-right: 30px;
   }
-  .audience__gallery_cards:last-child {
+  .categories__user_card:last-child {
     margin-right: 0;
   }
 }
 
-.audience__gallery_cards-description {
+.categories__user_card-description {
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
@@ -1228,13 +1235,6 @@
   .vacancy__arrow_container {
     display: none;
   }
-}
-
-.icon-arrow_rigth {
-  display: inline-block;
-  width: 7px;
-  height: 12px;
-  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
 }
 
 @media screen and (min-width: 1400px) {

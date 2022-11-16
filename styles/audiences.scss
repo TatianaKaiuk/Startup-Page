@@ -74,12 +74,12 @@
   color: #000000;
   margin-bottom: 40px;
 }
-.audience__gallery {
+.categories {
     @include for-large-up {
    display: flex;
   }
 
-&_cards {
+&__user_card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,7 +112,7 @@
   }
 }
 }
-.audience__gallery_cards-description {
+.categories__user_card-description {
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
